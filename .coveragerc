@@ -1,0 +1,3 @@
+[run]
+include = dzidzo/*
+omit = *migrations*
