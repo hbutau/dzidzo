@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<ul>
+{% for track in object_list %}
+		
+<li>{{ track }}</li>
+		{% endfor %}	
+</ul>
+
+{% endblock %}
