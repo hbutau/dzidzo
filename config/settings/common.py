@@ -99,7 +99,14 @@ MANAGERS = ADMINS
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
 DATABASES = {
     # Raises ImproperlyConfigured exception if DATABASE_URL not in os.environ
-    'default': env.db("DATABASE_URL", default="postgres:///dzidzo"),
+    'default':  {                                                                               
+                  'ENGINE': 'django.db.backends.sqlite3',                                                          
+                  'NAME': '$dzidzo',                                                                              
+                  'USER': 'hamu',                                                                                  
+                  'PASSWORD': 'popo',                                                                             
+                  'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' f|
+                  'PORT': '',                      # Set to empty string for default.                           
+                }  
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 
