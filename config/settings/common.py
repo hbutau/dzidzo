@@ -44,7 +44,7 @@ THIRD_PARTY_APPS = (
 # Apps specific for this project go here.
 LOCAL_APPS = (
     'dzidzo.users',  # custom users app
-    'tracks' ,  # Your stuff: custom apps go here
+   # 'tracks' ,  # Your stuff: custom apps go here
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -99,7 +99,6 @@ MANAGERS = ADMINS
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
 DATABASES = {
     # Raises ImproperlyConfigured exception if DATABASE_URL not in os.environ
-<<<<<<< HEAD
     'default':  {                                                                               
                   'ENGINE': 'django.db.backends.sqlite3',                                                          
                   'NAME': '$dzidzo',                                                                              
@@ -108,16 +107,6 @@ DATABASES = {
                   'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' f|
                   'PORT': '',                      # Set to empty string for default.                           
                 }  
-=======
-    'default': {
-                'ENGINE': 'django.db.backends.sqlite3',
-                'NAME': '$dzidzo',
-                'USER': 'hamu',
-                'PASSWORD': 'popo',
-                'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-                'PORT': '',                      # Set to empty string for default.
-            }
->>>>>>> f7f7ee1096d57dcbc027c21ac94621387d11155d
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 
