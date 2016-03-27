@@ -11,3 +11,5 @@ class Track_View(views.LoginRequiredMixin, ListView):
 	queryset = Track.objects.all()
 	context_object_name = "tracks"
 	template_name = 'tracks.html'
+
+
